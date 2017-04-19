@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1706">
+<h3>Синхронизированный президент</h3>
+<p>И снова <strong><span class="text-corporate">Singleton</span></strong> паттерн &#8212; синхронизация в статическом блоке<br />
+Внутри класса <span class="text-corporate"><strong>OurPresident</strong></span> в статическом блоке создайте синхронизированный блок.<br />
+Внутри синхронизированного блока инициализируйте <strong>president</strong>.</p>
+
+</div>

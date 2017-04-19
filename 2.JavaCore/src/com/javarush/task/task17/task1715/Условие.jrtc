@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1715">
+<h3>Аптека</h3>
+<p>Реализуй интерфейс <span class="text-corporate"><strong>Runnable</strong></span> в классах <span class="text-corporate"><strong>Apteka</strong></span> и <span class="text-corporate"><strong>Person</strong></span>.<br />
+Все нити должны работать пока не <strong>isStopped</strong>.<br />
+Логика для <span class="text-corporate"><strong>Apteka</strong></span>: <mark>drugsController</mark> должен сделать закупку случайного лекарства (<mark class="user"><span class="text-corporate">getRandomDrug</span></mark>) в количестве (<mark class="user">getRandomCount</mark>) и подождать <span class="text-user"><strong>300</strong></span> мс.<br />
+Логика для <span class="text-corporate"><strong>Person</strong></span>: <mark>drugsController</mark> должен сделать продажу случайного лекарства (<mark class="user">getRandomDrug</mark>) в количестве (<mark class="user">getRandomCount</mark>) и подождать <span class="text-user"><strong>100</strong></span> мс.<br />
+Расставь <strong>synchronized</strong> там, где это необходимо.</p>
+
+</div>

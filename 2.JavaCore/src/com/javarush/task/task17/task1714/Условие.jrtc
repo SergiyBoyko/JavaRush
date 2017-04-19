@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1714">
+<h3>Comparable</h3>
+<p>Реализуйте интерфейс <mark class="red">Comparable&lt;Beach&gt;</mark> в классе <span class="text-corporate"><strong>Beach</strong></span>. <strong>Пляжи</strong>(<em>Beach</em>) будут использоваться нитями, поэтому позаботьтесь, чтобы все методы были синхронизированы.<br />
+Реализовать метод compareTo так, чтобы он при сравнении двух пляжей выдавал число, которое показывает что первый пляж лучше(<em>позитивное число</em>)<br />
+или второй пляж лучше (<em>негативное число</em>),и насколько он лучше.</p>
+
+</div>

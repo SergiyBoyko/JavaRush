@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1626">
+<h3>Создание по образцу</h3>
+<p>Разберись, как работает программа.<br />
+По образу и подобию <span class="text-corporate"><strong>CountDownRunnable</strong></span> создай нить <span class="text-corporate"><strong>CountUpRunnable</strong></span>, которая выводит значения в нормальном порядке &#8212; от <span class="text-user"><strong>1</strong></span> до <mark class="user">number</mark>.</p>
+
+</div>

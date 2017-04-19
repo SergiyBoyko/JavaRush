@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1620">
+<h3>Один для всех, все - для одного</h3>
+<p>1. Разберись, как работает программа.<br />
+1.1. Обрати внимание, что объект <mark class="green">Water</mark> &#8212; один для всех нитей.<br />
+2. Реализуй метод <mark>ourInterruptMethod</mark>, чтобы он прерывал все нити из threads.<br />
+3. В методе <mark>run</mark> исправь значения переменных:<br />
+3.1. <mark class="user">isCurrentThreadInterrupted</mark> &#8212; должна равняться значению метода <mark>isInterrupted</mark> у текущей нити.<br />
+3.2. <mark class="user">threadName</mark> &#8212; должна равняться значению метода <mark>getName</mark> (реализовано в классе <span class="text-corporate"><strong>Thread</strong></span>) у текущей нити.</p>
+
+</div>

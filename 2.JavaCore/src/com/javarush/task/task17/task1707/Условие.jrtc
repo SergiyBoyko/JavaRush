@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1707">
+<h3>МВФ</h3>
+<p><span class="text-corporate"><strong> Singleton</strong></span> паттерн &#8212; синхронизация в методе.<br />
+Класс <span class="text-corporate"><strong>IMF</strong></span> &#8212; это <strong>Международный Валютный Фонд</strong>.<br />
+Внутри метода <mark>getFund</mark> создайте синхронизированный блок.<br />
+Внутри синхронизированного блока инициализируйте поле <mark class="user">imf</mark> так, чтобы метод <mark>getFund</mark> всегда возвращал один и тот же объект.</p>
+
+</div>

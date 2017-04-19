@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1703">
+<h3>Синхронизированные заметки</h3>
+<p>1. Класс <span class="text-corporate"><strong>Note</strong></span> будет использоваться нитями. Поэтому сделай так, чтобы обращения к листу <strong>notes</strong> блокировали мьютекс <strong>notes</strong>, не <strong>this</strong><br />
+2. Все <mark class="green">System</mark>.<mark class="user">out</mark>.<mark>println</mark> не должны быть заблокированы (<em><strong>синхронизированы</strong></em>), т.е. не должны находиться в блоке <strong>synchronized</strong></p>
+
+</div>

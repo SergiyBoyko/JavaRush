@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1713">
+<h3>Общий список</h3>
+<p>1. Изменить класс <span class="text-corporate"><strong>Solution</strong></span> так, чтобы он стал списком. (<em>Необходимо реализовать интерфейс </em><strong>java.util.List</strong>).<br />
+2. Список <span class="text-corporate"><strong>Solution</strong></span> должен работать только с целыми числами <span class="text-corporate">Long</span>.<br />
+3. Воспользуйтесь полем <mark class="user">original</mark>.<br />
+4. Список будет использоваться нитями, поэтому позаботьтесь, чтобы все методы были синхронизированы.</p>
+
+</div>

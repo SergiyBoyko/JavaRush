@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1702">
+<h3>Вместе быстрее? Ща проверим :)</h3>
+<p>1. Разберись, что и как работает.<br />
+2. Создай <strong><span class="text-corporate">public static</span></strong> нить <span class="text-corporate"><strong>SortThread</strong></span>, которая в методе run отсортирует статический массив <strong><span class="text-red">testArray</span></strong> используя метод <mark>sort</mark>.</p>
+
+</div>

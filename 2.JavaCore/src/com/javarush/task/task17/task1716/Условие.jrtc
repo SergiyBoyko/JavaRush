@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1716">
+<h3>Синхронизированные методы</h3>
+<p>Установить модификатор <strong>synchronized</strong> только тем методам, которым необходимо.<br />
+Объект класса <strong>Solution</strong> будет использоваться нитями.</p>
+
+</div>

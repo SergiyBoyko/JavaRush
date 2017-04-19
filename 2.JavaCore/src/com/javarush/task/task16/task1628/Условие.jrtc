@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1628">
+<h3>Кто первый встал - того и тапки</h3>
+<p>1. Разберись, что делает программа.<br />
+1.1. Каждая нить должна читать с консоли слова. Используй готовый <strong><span class="text-corporate">static BufferedReader reader</span></strong>.<br />
+1.2. Используй <strong><span class="text-corporate">AtomicInteger countReadStrings</span></strong>, чтобы посчитать, сколько слов уже считано с консоли всеми нитями.<br />
+2. Реализуй логику метода run:<br />
+2.1. Пока нить не прервана (<strong>!isInterrupted</strong>) читай с консоли слова и добавляй их в поле <span class="text-red"><strong>List</strong>&lt;String&gt; <strong>result</strong></span>.<br />
+2.2. Используй <mark>countReadStrings</mark> для подсчета уже считанных с консоли слов.</p>
+
+</div>

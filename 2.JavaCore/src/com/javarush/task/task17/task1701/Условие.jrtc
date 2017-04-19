@@ -1,0 +1,11 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1701">
+<h3>Заметки</h3>
+<p>Асинхронность выполнения нитей.<br />
+1. Класс <span class="text-corporate"><strong>Note</strong></span> будет использоваться нитями.<br />
+2. Создай <span class="text-corporate"><strong>public static</strong></span> нить <strong><span class="text-corporate">NoteThread</span></strong> (<strong>Runnable</strong> <em>не является нитью</em>), которая в методе <mark>run</mark> <span class="text-user"><strong>1000</strong></span> раз (<mark class="user">index</mark> = <span class="text-user"><strong>0-999</strong></span>) сделает следующие действия:<br />
+2.1. Используя метод <mark>addNote</mark> добавит заметку с именем <strong>[getName() + &#171;-Note&#187; + index]</strong>, например, при <mark class="user">index</mark>=<span class="text-user"><strong>4</strong></span><br />
+&#171;<em><strong>Thread-0-Note4</strong></em>&#187;<br />
+2.2. Используя метод <mark>removeNote</mark> удалит заметку<br />
+2.3. В качестве параметра в <mark class="user">removeNote</mark> передай имя нити &#8212; метод <mark>getName()</mark></p>
+
+</div>

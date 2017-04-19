@@ -1,0 +1,5 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1717">
+<h3>Лишняя синхронизация</h3>
+<p><strong> synchronized</strong> существенно замедляет программу, поэтому убери избыточность <strong>synchronized</strong> внутри методов</p>
+
+</div>

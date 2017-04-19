@@ -1,0 +1,15 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1624">
+<h3>Последовательные выполнения нитей</h3>
+<p>1. Разберись, что делает программа.<br />
+2. Сделай так, чтоб программа сначала выводила результат нити, а когда нить завершится &#8212; продолжила метод <mark>main</mark>.</p>
+<p>3. <strong>Пример выходных данных:</strong><br />
+<code>inside MyThread 0<br />
+inside MyThread 1<br />
+...<br />
+inside MyThread 9<br />
+inside main 0<br />
+inside main 1<br />
+...<br />
+inside main 9</code></p>
+
+</div>

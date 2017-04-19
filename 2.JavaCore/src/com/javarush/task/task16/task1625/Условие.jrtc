@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1625">
+<h3>Взаимная блокировка</h3>
+<p>1. Разберись, как работает программа.<br />
+2. Не меняя классы <span class="text-corporate"><strong>T1</strong></span> и <span class="text-corporate"><strong>T2</strong></span> сделай так, чтобы их нити завершились, не обязательно успешно.<br />
+3. Метод <mark>sleep</mark> не использовать.</p>
+
+</div>

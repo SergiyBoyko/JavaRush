@@ -1,0 +1,14 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1632">
+<h3>Клубок</h3>
+<p>1. Создай <span class="text-user"><strong>5</strong></span> различных своих нитей c отличным от <strong><span class="text-corporate">Thread</span></strong> типом:<br />
+1.1. Нить <span class="text-user"><strong>1</strong></span> должна бесконечно выполняться;<br />
+1.2. Нить <span class="text-user"><strong>2</strong></span> должна выводить &#171;<em><strong>InterruptedException</strong></em>&#187; при возникновении исключения <mark>InterruptedException</mark>;<br />
+1.3. Нить <span class="text-corporate text-user"><strong>3</strong></span> должна каждые полсекунды выводить &#171;<em><strong>Ура</strong></em>&#171;;<br />
+1.4. Нить <strong><span class="text-user">4</span></strong> должна реализовать интерфейс <mark class="red">Message</mark>, при вызове метода <mark>showWarning</mark> нить должна останавливаться;<br />
+1.5. Нить <span class="text-user"><strong>5</strong></span> должна читать с консоли числа пока не введено слово &#171;<em><strong>N</strong></em>&#171;, а потом вывести в консоль сумму введенных чисел.<br />
+2. В статическом блоке добавь свои нити в <span class="text-red"><strong>List</strong>&lt;Thread&gt; <strong>threads</strong></span> в перечисленном порядке.<br />
+3. Нити не должны стартовать автоматически.</p>
+<p><strong>Подсказка:<br />
+</strong><em>Нить </em><span class="text-user"><strong>4</strong></span><em> можно проверить методом</em> <mark>isAlive()</mark></p>
+
+</div>

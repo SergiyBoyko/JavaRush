@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1708">
+<h3>Заметки для всех</h3>
+<p>Класс <span class="text-corporate"><strong>Note</strong></span> будет использоваться нитями.<br />
+Поэтому сделай так, чтобы лист <strong><span class="text-red">notes</span></strong> находился в общей памяти, Т.е не будет кэшироваться потоками в свою локальную область памяти.</p>
+
+</div>

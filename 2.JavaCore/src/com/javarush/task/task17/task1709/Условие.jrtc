@@ -1,0 +1,5 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1709">
+<h3>Предложения</h3>
+<p>Не используя <mark>synchronized</mark> сделай так, чтобы количество сделанных и принятых предложений было одинаковым.</p>
+
+</div>

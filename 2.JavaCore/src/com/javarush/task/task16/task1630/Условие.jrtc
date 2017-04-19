@@ -1,0 +1,16 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1630">
+<h3>Последовательный вывод файлов</h3>
+<p>1. Разберись, что делает программа.<br />
+2. В статическом блоке считай <span class="text-user"><strong>2</strong></span> имени файла <mark class="user">firstFileName</mark> и <mark class="user">secondFileName</mark>.<br />
+3. Внутри класса <span class="text-corporate"><strong>Solution</strong></span> создай нить <span class="text-corporate"><strong>public static ReadFileThread</strong></span>, которая реализует<br />
+интерфейс <mark class="red">ReadFileInterface</mark> (Подумай, что больше подходит &#8212; <span class="text-corporate"><strong>Thread</strong></span> или <span class="text-corporate"><strong>Runnable</strong></span>).<br />
+3.1. Метод <mark>setFileName</mark> должен устанавливать имя файла, из которого будет читаться содержимое.<br />
+3.2. Метод <mark>getFileContent</mark> должен возвращать содержимое файла.<br />
+3.3. В методе <mark>run</mark> считай содержимое файла, закрой поток. Раздели пробелом строки файла.<br />
+4. Подумай, в каком месте нужно подождать окончания работы нити, чтобы обеспечить последовательный вывод файлов.<br />
+4.1. Для этого добавь вызов соответствующего метода.</p>
+<p><strong>Ожидаемый вывод:</strong><br />
+<code>[все тело первого файла]<br />
+[все тело второго файла]</code></p>
+
+</div>

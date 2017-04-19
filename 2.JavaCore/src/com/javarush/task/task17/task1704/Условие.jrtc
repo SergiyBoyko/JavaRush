@@ -1,0 +1,5 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1704">
+<h3>Синхронизированные заметки 2</h3>
+<p>Класс <span class="text-corporate"><strong>Note</strong></span> будет использоваться нитями. Поэтому сделай так, чтобы вcе методы были синхронизированы</p>
+
+</div>

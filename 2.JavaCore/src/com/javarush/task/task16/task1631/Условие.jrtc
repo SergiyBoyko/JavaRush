@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1631">
+<h3>Factory method pattern</h3>
+<p>1. Внимательно посмотри, какие классы у тебя есть.<br />
+2. В отдельных файлах в пакете <strong>common</strong> создай классы <span class="text-corporate"><strong>JpgReader</strong></span>, <span class="text-corporate"><strong>PngReader</strong></span>, <span class="text-corporate"><strong>BmpReader</strong></span>, которые реализуют интерфейс <mark class="red">ImageReader</mark>.<br />
+3. В отдельном файле в основном пакете создай класс <span class="text-corporate"><strong>ImageReaderFactory</strong></span> с одним методом.<br />
+3.1. Подумай, как он должен называться.<br />
+3.2. Подумай, какие модификаторы должны быть у этого метода.<br />
+4. Этот метод должен:<br />
+4.1. Для каждого значения из <strong><span class="text-corporate">ImageTypes</span></strong> возвращать соответствующий <strong><span class="text-corporate">Reader</span></strong>, например, для <strong>ImageTypes.JPG</strong> &#8212; <strong>JpgReader</strong>;<br />
+4.2. Если передан неправильный параметр, то выбрасывать исключение <mark>IllegalArgumentException(&#171;<em>Неизвестный тип картинки</em>&#171;)</mark>.</p>
+
+</div>

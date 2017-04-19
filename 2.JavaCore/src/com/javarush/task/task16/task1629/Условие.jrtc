@@ -1,0 +1,20 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1629">
+<h3>Только по-очереди!</h3>
+<p>1. В классе <span class="text-corporate"><strong>Solution</strong></span> создать <span class="text-corporate"><strong>public static</strong></span> класс нити <span class="text-corporate"><strong>Read3Strings</strong></span> унаследовавшись от <span class="text-corporate"><strong>Thread</strong></span>.<br />
+2. В методе <mark>run</mark> реализовать чтение с консоли трех строк.<br />
+3. Три подряд введенных строки должны считываться в одной нити и объединяться в одну строку через пробел.<br />
+4. В методе <mark>main</mark> вывести результат для каждой нити.<br />
+5. Используй <mark>join</mark>.</p>
+<p><strong>Пример:</strong></p>
+<p><strong>Входные данные</strong><br />
+<code>a<br />
+b<br />
+c<br />
+d<br />
+e<br />
+f</code></p>
+<p><strong>Выходные данные:</strong><br />
+<code>a b c<br />
+d e f</code></p>
+
+</div>

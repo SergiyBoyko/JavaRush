@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1722">
+<h3>Посчитаем</h3>
+<p>1. Сделай так, чтобы результат успел посчитаться для всех элементов массива <strong><span class="text-red">values</span></strong> НЕ используя <strong><mark class="red">Thread</mark></strong>.<mark class="user">sleep</mark> в методе <mark>main(String[] <strong>args</strong>)</mark><br />
+2. Исправь <strong>synchronized</strong> блок так, чтобы массив <strong><span class="text-red">values</span></strong> заполнился значением <span class="text-user"><strong>1</strong></span></p>
+
+</div>

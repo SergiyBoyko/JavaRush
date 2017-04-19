@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1903">
+<h3>Адаптация нескольких интерфейсов</h3>
+<p>Адаптируй <span class="text-corporate"><strong>IncomeData</strong></span> к <span class="text-corporate"><strong>Customer</strong></span> и <span class="text-corporate"><strong>Contact</strong></span>.<br />
+Классом-адаптером является <span class="text-corporate"><strong>IncomeDataAdapter</strong></span>.<br />
+Инициализируйте <span class="text-corporate"><strong>countries</strong></span> перед началом выполнения программы. Соответствие кода страны и названия:<br />
+<strong>UA</strong><em> Ukraine</em><br />
+<strong>RU</strong><em> Russia</em><br />
+<strong>CA</strong><em> Canada</em><br />
+Дополнить телефонный номер нулями до <span class="text-user"><strong>10</strong></span> цифр при необходимости (смотри примеры).<br />
+Обратите внимание на формат вывода фамилии и имени человека.</p>
+
+</div>

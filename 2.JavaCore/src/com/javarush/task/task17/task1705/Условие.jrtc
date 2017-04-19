@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1705">
+<h3>Сад-огород</h3>
+<p>1. Создай метод <mark>public void addFruit(int <strong>index</strong>, String <strong>fruit</strong>)</mark> &#8212; который добавляет параметр <mark class="user">fruit</mark> в лист <mark class="user">fruits</mark> на позицию <mark class="user">index</mark><br />
+2. Создай метод <mark>public void removeFruit(int <strong>index</strong>)</mark> &#8212; который удаляет из <strong><span class="text-corporate">fruits</span></strong> элемент с индексом <mark class="user">index</mark><br />
+3. Создай метод <mark>public void addVegetable(int <strong>index</strong>, String <strong>vegetable</strong>)</mark> &#8212; который добавляет параметр <mark class="user">vegetable</mark> в лист <mark class="user">vegetables</mark> на позицию <mark class="user">index</mark><br />
+4. Создай метод <mark>public void removeVegetable(int index)</mark> &#8212; который удаляет из <span class="text-corporate"><strong>vegetables</strong></span> элемент с индексом <mark class="user">index</mark><br />
+5. Класс <span class="text-corporate"><strong>Garden</strong></span> будет использоваться нитями. Поэтому сделай так, чтобы все методы блокировали мьютекс <strong>this</strong><br />
+6. Реализуй это минимальным количеством кода</p>
+
+</div>

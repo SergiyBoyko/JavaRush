@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1718">
+<h3>Глажка</h3>
+<p>И снова быт&#8230;<br />
+Поставьте один <strong>synchronized</strong>, чтобы <mark class="user">diana</mark> и <mark class="user">igor</mark> гладили по-очереди, ведь утюг всего один!</p>
+<p><strong>Подсказка</strong>:<br />
+<em>использовать блокировку на уровне класса.</em></p>
+
+</div>
