@@ -41,19 +41,16 @@ public class Solution {
         private List<String> result = new ArrayList<String>();
 
         public void run() {
-            while (!this.isInterrupted()) {
-                //synchronized (this)
-                {
-                    try
-                    {
+            //add your code here - добавьте код тут
+            try {
+                while (!isInterrupted()) {
+                    while (reader.ready()) {
                         result.add(reader.readLine());
                         countReadStrings.incrementAndGet();
                     }
-                    catch (IOException e)
-                    {
-                        e.printStackTrace();
-                    }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
 

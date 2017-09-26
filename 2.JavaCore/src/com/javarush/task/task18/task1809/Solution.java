@@ -9,13 +9,21 @@ import java.io.*;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        FileInputStream in = new FileInputStream(new File(reader.readLine()));
-        FileOutputStream out = new FileOutputStream(reader.readLine());
-        byte[] buffer = new byte[in.available()];
+        String file1 = reader.readLine();
+        String file2 = reader.readLine();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
-        for(int i = in.read(buffer); i > 0; i--)
-            out.write(buffer[i-1]);
-        in.close();
-        out.close();
+        try (FileInputStream fis = new FileInputStream(file1)) {
+            while (fis.available() > 0) baos.write(fis.read());
+        }
+        byte[] bytes = baos.toByteArray();
+        try (FileOutputStream fos = new FileOutputStream(file2)) {
+            for (int i = bytes.length - 1; i >= 0; i--) {
+                fos.write(bytes[i]);
+            }
+        }
+//        byte[] encoded = Files.readAllBytes(Paths.get(file1));
+//        byte[] res = new byte[encoded.length];
+
     }
 }

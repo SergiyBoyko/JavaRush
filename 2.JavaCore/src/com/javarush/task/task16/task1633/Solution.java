@@ -18,7 +18,7 @@ public class Solution {
 
     public static class TestedThread extends Thread {
         public TestedThread(Thread.UncaughtExceptionHandler handler) {
-            setUncaughtExceptionHandler(handler);
+            setDefaultUncaughtExceptionHandler(handler);
             start();
         }
 
@@ -32,6 +32,7 @@ public class Solution {
     }
 
     public static class OurUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
+
         @Override
         public void uncaughtException(Thread t, Throwable e) {
             System.out.println(t.getName() + ": " + e.getMessage());

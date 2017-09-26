@@ -1,7 +1,16 @@
-<div class="wdghtml" taskKey="com.javarush.task.task18.task1809">
-<h3>Реверс файла</h3>
-<p>Считать с консоли <span class="text-user"><strong>2</strong></span> имени файла: <strong>файл1</strong>, <strong>файл2</strong>.<br />
-Записать в <strong>файл2</strong> все байты из <strong>файл1</strong>, но в обратном порядке.<br />
-<strong>Закрыть потоки.</strong></p>
+taskKey="com.javarush.task.task18.task1809"
 
-</div>
+Реверс файла
+
+Считать с консоли 2 имени файла: файл1, файл2.
+Записать в файл2 все байты из файл1, но в обратном порядке.
+Закрыть потоки.
+
+
+Требования:
+1.	Программа должна два раза считать имена файлов с консоли.
+2.	Для чтения из файла используй поток FileInputStream, для записи в файл - FileOutputStream
+3.	Во второй файл нужно записать все байты из первого в обратном порядке.
+4.	Потоки FileInputStream и FileOutputStream должны быть закрыты.
+
+

@@ -9,16 +9,18 @@ import java.util.Map;
 
 public class Solution {
     public static Map<String, String> countries = new HashMap<String, String>();
+
     static {
-        countries.put("UA","Ukraine");
-        countries.put("RU","Russia");
-        countries.put("CA","Canada");
+        countries.put("UA", "Ukraine");
+        countries.put("RU", "Russia");
+        countries.put("CA", "Canada");
     }
 
     public static void main(String[] args) {
+
     }
 
-    public static class IncomeDataAdapter implements Customer, Contact{
+    public static class IncomeDataAdapter implements Customer, Contact {
         private IncomeData data;
 
         public IncomeDataAdapter(IncomeData data) {
@@ -27,36 +29,29 @@ public class Solution {
 
         @Override
         public String getName() {
-            return this.data.getContactFirstName() + ", "  + this.data.getContactLastName();
+            String name = String.format("%s, %s",data.getContactLastName(), data.getContactFirstName());
+            return name;
         }
 
         @Override
         public String getPhoneNumber() {
-            String num = "+" + this.data.getCountryPhoneCode() + "(";
-            String num2 = "" + this.data.getPhoneNumber();
-            int n2l = num2.length();
-            if ((num2.length())<10) {
-                for (int i = 0; i < 10 - n2l; i++) {
-                    num2 = "0" + num2;
-                }
-            }
-            char[] c = num2.toCharArray();
-            String x ="";
-            for (int i = 3; i < c.length; i++) {
-                x+=c[i];
-            }
-            num = num + c[0] + c[1] + c[2] + ")" + x;
-            return num;
+            String m = String.format("+%d(%2$s)%3$s-%4$s-%5$s",data.getCountryPhoneCode(),
+                    String.format("%010d", data.getPhoneNumber()).substring(0, 3),
+                    String.format("%010d", data.getPhoneNumber()).substring(3, 6),
+                    String.format("%010d", data.getPhoneNumber()).substring(6, 8),
+                    String.format("%010d", data.getPhoneNumber()).substring(8));
+
+            return m;
         }
 
         @Override
         public String getCompanyName() {
-            return this.data.getCompany();
+            return data.getCompany();
         }
 
         @Override
         public String getCountryName() {
-            return countries.get(this.data.getCountryCode());
+            return countries.get(data.getCountryCode());
         }
     }
 

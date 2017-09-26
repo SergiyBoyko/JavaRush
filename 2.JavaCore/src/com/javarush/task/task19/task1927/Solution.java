@@ -5,6 +5,7 @@ package com.javarush.task.task19.task1927;
 */
 
 import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
 import java.io.PrintStream;
 
 public class Solution {
@@ -12,18 +13,34 @@ public class Solution {
 
     public static void main(String[] args) {
         PrintStream consoleStream = System.out;
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        PrintStream stream = new PrintStream(outputStream);
-        System.setOut(stream);
+        PrintStream garbage = new PrintStream((new ByteArrayOutputStream()));
+        PrintStream myStream = new PrintStream(System.out) {
+            private boolean b = false;
+            @Override
+            public void println(String x) {
+                if (b) super.println(x + "\nJavaRush - курсы Java онлайн");
+                else super.println(x);
+                b = !b;
+            }
+        };
+        System.setOut(myStream);
         testString.printSomething();
-        String result = outputStream.toString();
         System.setOut(consoleStream);
-        char endl = (char) 13;
-        String lin = result.replaceAll(String.valueOf(endl) + (char) 10, " ");
-        String[] line = lin.split(" ");
-        for (int i = 0; i < line.length; i++) {
-            System.out.println(line[i]);
-            if (i%2 == 1) System.out.println("JavaRush - курсы Java онлайн");
+    }
+
+    private static class MyPrintStream extends PrintStream {
+        private boolean b;
+
+        public MyPrintStream(OutputStream out) {
+            super(out);
+            b = false;
+        }
+
+        @Override
+        public void println(String x) {
+            if (b) super.println(x + "\nJavaRush - курсы Java онлайн");
+            else super.println(x);
+            b = !b;
         }
     }
 

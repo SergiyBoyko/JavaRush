@@ -12,23 +12,29 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String s = reader.readLine();
-        reader.close();
-//        BufferedReader reader1 = new BufferedReader(new FileReader(s));
-//        reader1.close();
-        FileReader fr = new FileReader(s);
-        String line = "";
+
+        FileReader inFile = new FileReader(reader.readLine());
         int count = 0;
-        while (fr.ready()) {
-            line += (char) fr.read();
+        String str = "";
+
+        while (inFile.ready()) {
+            char symbol = (char) inFile.read();
+            str += String.valueOf(symbol).toLowerCase();
         }
-        while (true) {
-            String ds = line.replaceFirst("world","");
-            if (ds.equals(line)) break;
-            line = ds;
-            count++;
+
+        str = str.replaceAll("\\p{Punct}", " ");
+        str = str.replaceAll("\n", " ");
+        //System.out.println(str);
+
+        String[] mas = str.split(" ");
+        for (String s : mas) {
+            s = s.trim();
+            if (s.equals("world"))
+                count++;
         }
-        fr.close();
+
         System.out.println(count);
+        reader.close();
+        inFile.close();
     }
 }

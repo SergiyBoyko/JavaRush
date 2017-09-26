@@ -48,29 +48,19 @@ public class Solution {
 
         @Override
         public void run() {
-            try{
-
-                while (!OnlineGame.isWinnerFound)
-                {
-                    int iterator;
-                    int endCount = OnlineGame.steps.size();
-
-                    for ( String s : OnlineGame.steps) {
-                        System.out.println(getName()+":"+s);
-                        Thread.sleep((long) 1000/rating);
-                    }
-
-                    iterator = endCount;
-                    if (iterator == endCount)
-                    {
-                        System.out.println(getName() + ":победитель!");
-                        OnlineGame.isWinnerFound = true;
-                    }
-
+            //Add your code here - добавь код тут
+            try {
+                for (String s : OnlineGame.steps) {
+                    Thread.sleep(1000 / rating);
+                    System.out.println(getName() + ":" + s);
                 }
-            }catch (InterruptedException e)
-            {
+                if (!OnlineGame.isWinnerFound)
+                    System.out.println(getName() + ":победитель!");
+                OnlineGame.isWinnerFound = true;
+
+            } catch (InterruptedException e) {
                 System.out.println(getName() + ":проиграл");
+//                e.printStackTrace();
             }
         }
     }

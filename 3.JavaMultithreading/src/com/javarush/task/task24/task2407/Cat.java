@@ -5,6 +5,7 @@ package com.javarush.task.task24.task2407;
 который не реализован в текущем классе
  */
 public class Cat implements Pet {
+
     private String name;
 
     public Cat(String name) {
@@ -17,18 +18,41 @@ public class Cat implements Pet {
      * Логика метода say:
      * Если i <= 0, то вывести на экран, что кот спит. Пример, "Васька спит."'
      * Иначе вывести фразу: "имя_кота говорит мяу!". Пример для i=3, "Васька говорит мяяяу!"
-     * <p/>
+     * <p>
      * <b>Пример вывода:</b>
      * Мурзик спит.
      * Васька говорит мяяу!
      * Кошка говорит мяяяяяу!
      * Мышь пищит.
      * Томас говорит мяу!
-     * <p/>
+     * <p>
+     *
      * @param i количество букв 'я' в слове мяу
      * @return экземпляр класса CatPet
      */
     public Sayable toSayable(final int i) {
-        return null;
+        if (i<1) {
+            return new Sayable() {
+                @Override
+                public String say() {
+                    return name + " спит.";
+                }
+            };
+        }
+        else {
+            String s = "м";
+            for (int j = 0; j < i; j++) {
+                s+="я";
+            }
+            s+="у!";
+            final String t = s;
+            return new Sayable() {
+                @Override
+                public String say() {
+                    return name + " говорит " + t;
+                }
+            };
+        }
+
     }
 }

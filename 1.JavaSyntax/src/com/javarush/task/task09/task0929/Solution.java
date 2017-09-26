@@ -10,10 +10,19 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String sourceFileName = reader.readLine();
+        InputStream fileInputStream = null;
+        boolean t = true;
+        while (t) {
+            try {
+                String sourceFileName = reader.readLine();
+                fileInputStream = getInputStream(sourceFileName);
+                t = false;
+            } catch (IOException e) {
+                System.out.println("Файл не существует.");
+//                System.exit(0);
+            }
+        }
         String destinationFileName = reader.readLine();
-
-        InputStream fileInputStream = getInputStream(sourceFileName);
         OutputStream fileOutputStream = getOutputStream(destinationFileName);
 
         while (fileInputStream.available() > 0) {
@@ -21,8 +30,8 @@ public class Solution {
             fileOutputStream.write(data);
         }
 
-        fileInputStream.close();
         fileOutputStream.close();
+        fileInputStream.close();
     }
 
     public static InputStream getInputStream(String fileName) throws IOException {

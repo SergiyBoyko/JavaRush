@@ -26,7 +26,6 @@ public class Solution {
         }
         return result;
     }
-
     public static void main(String[] args) {
         System.out.println(checkTelNumber("+380501234567"));
         System.out.println(checkTelNumber("+38(050)1234567"));
@@ -37,5 +36,6 @@ public class Solution {
         System.out.println(checkTelNumber("050ххх4567"));
         System.out.println(checkTelNumber("050123456"));
         System.out.println(checkTelNumber("(0)501234567"));
+
     }
 }

@@ -14,13 +14,17 @@ public class Solution {
     }
 
     public static void main(String... args) throws IOException {
+        args = new String[2];
+        args[0] = "C:/z/1.txt";
+        args[1] = "C:/z/4.txt";
+
         try (
-                FileOutputStream outputStream = new FileOutputStream("C:\\z\\1.txt");//args[0]
-                InputStream is = Solution.class.getClassLoader().getResourceAsStream("C:\\z\\1.1.txt");//args[1]
+                FileOutputStream outputStream = new FileOutputStream(args[0]);
+                InputStream is = Solution.class.getClassLoader().getResourceAsStream(args[1]);
         ) {
             ;
-            byte[] b = new byte[is.available()];
-            outputStream.write(is.read(b));
+//            byte[] b = new byte[is.available()];
+//            outputStream.write(is.read(b));
 
             int value = 123_456_789;
             System.out.println(value);
@@ -42,7 +46,7 @@ public class Solution {
                 }
             }
 
-            if (result instanceof A) {
+            if (result instanceof C) {
                 C p = (C) result;
                 System.out.println(p.getClass().getSimpleName());
             }

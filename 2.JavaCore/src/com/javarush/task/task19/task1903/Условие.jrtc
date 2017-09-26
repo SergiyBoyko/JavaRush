@@ -1,12 +1,23 @@
-<div class="wdghtml" taskKey="com.javarush.task.task19.task1903">
-<h3>Адаптация нескольких интерфейсов</h3>
-<p>Адаптируй <span class="text-corporate"><strong>IncomeData</strong></span> к <span class="text-corporate"><strong>Customer</strong></span> и <span class="text-corporate"><strong>Contact</strong></span>.<br />
-Классом-адаптером является <span class="text-corporate"><strong>IncomeDataAdapter</strong></span>.<br />
-Инициализируйте <span class="text-corporate"><strong>countries</strong></span> перед началом выполнения программы. Соответствие кода страны и названия:<br />
-<strong>UA</strong><em> Ukraine</em><br />
-<strong>RU</strong><em> Russia</em><br />
-<strong>CA</strong><em> Canada</em><br />
-Дополнить телефонный номер нулями до <span class="text-user"><strong>10</strong></span> цифр при необходимости (смотри примеры).<br />
-Обратите внимание на формат вывода фамилии и имени человека.</p>
+taskKey="com.javarush.task.task19.task1903"
 
-</div>
+Адаптация нескольких интерфейсов
+
+Адаптируй IncomeData к Customer и Contact.
+Классом-адаптером является IncomeDataAdapter.
+Инициализируйте countries перед началом выполнения программы. Соответствие кода страны и названия:
+UA Ukraine
+RU Russia
+CA Canada
+Дополнить телефонный номер нулями до 10 цифр при необходимости (смотри примеры).
+Обратите внимание на формат вывода фамилии и имени человека.
+
+
+Требования:
+1.	Класс Solution должен содержать public static поле countries типа Map<String, String>.
+2.	В статическом блоке класса Solution инициализируй поле countries тестовыми данными согласно заданию.
+3.	Класс IncomeDataAdapter должен реализовывать интерфейсы Customer и Contact.
+4.	Класс IncomeDataAdapter должен содержать приватное поле data типа IncomeData.
+5.	Класс IncomeDataAdapter должен содержать конструктор с параметром IncomeData.
+6.	В классе IncomeDataAdapter реализуй методы интерфейсов Customer и Contact используя подсказки в виде комментариев в интерфейсах.
+
+

@@ -1,10 +1,20 @@
-<div class="wdghtml" taskKey="com.javarush.task.task16.task1628">
-<h3>Кто первый встал - того и тапки</h3>
-<p>1. Разберись, что делает программа.<br />
-1.1. Каждая нить должна читать с консоли слова. Используй готовый <strong><span class="text-corporate">static BufferedReader reader</span></strong>.<br />
-1.2. Используй <strong><span class="text-corporate">AtomicInteger countReadStrings</span></strong>, чтобы посчитать, сколько слов уже считано с консоли всеми нитями.<br />
-2. Реализуй логику метода run:<br />
-2.1. Пока нить не прервана (<strong>!isInterrupted</strong>) читай с консоли слова и добавляй их в поле <span class="text-red"><strong>List</strong>&lt;String&gt; <strong>result</strong></span>.<br />
-2.2. Используй <mark>countReadStrings</mark> для подсчета уже считанных с консоли слов.</p>
+taskKey="com.javarush.task.task16.task1628"
 
-</div>
+Кто первый встал - того и тапки
+
+1. Разберись, что делает программа.
+1.1. Каждая нить должна читать с консоли слова. Используй готовый static BufferedReader reader.
+1.2. Используй AtomicInteger countReadStrings, чтобы посчитать, сколько слов уже считано с консоли всеми нитями.
+2. Реализуй логику метода run:
+2.1. Пока нить не прервана (!isInterrupted) читай с консоли слова и добавляй их в поле List<String> result.
+2.2. Используй countReadStrings для подсчета уже считанных с консоли слов.
+
+
+Требования:
+1.	Метод run должен работать пока нить не прервана (!isInterrupted).
+2.	Метод run НЕ должен создавать свои InputStreamReader-ы или BufferedReader-ы.
+3.	Метод run должен считывать слова из reader и добавлять их в список result.
+4.	Метод run должен после каждого считывания увеличивать счетчик прочитанных строк countReadStrings на 1.
+5.	Программа должна выводить данные, считанные каждым потоком.
+
+

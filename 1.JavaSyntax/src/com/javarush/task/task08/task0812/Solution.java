@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.List;
 
 /* 
 Cамая длинная последовательность
@@ -12,23 +11,23 @@ Cамая длинная последовательность
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        List<Integer> list = new ArrayList<Integer>();
+        int q = 1, max = 0;
+        ArrayList<Integer> integers = new ArrayList<Integer>();
         for (int i = 0; i < 10; i++) {
-            list.add(Integer.parseInt(reader.readLine()));
+            integers.add(Integer.parseInt(reader.readLine()));
         }
-        int[] n = new int[10];
-        for (int i = 0; i < n.length; i++) {
-            n[i] = 0;
-        }
-        for (Integer num : list) {
-            for (int i = 0; i < list.size(); i++) {
-                if (num.equals(list.get(i))) n[i]++;
+//        Collections.sort(integers);
+        for (int i = 1; i < integers.size(); i++) {
+            if (!integers.get(i - 1).equals(integers.get(i))) {
+                if (max < q) max = q;
+                q = 1;
             }
+            else q++;
         }
-        int max= n[0];
-        for (int i = 0; i < n.length; i++) {
-            if (n[i] > max) max = n[i];
-        }
+        if (max < q) max = q;
         System.out.println(max);
+        reader.close();
+        //напишите тут ваш код
+
     }
 }
